@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock title %}
+
+{% block body %}
+<div class="container fluid px-0">
+    {% load static %}
+    <img src="{%static "contact img.jpg"%}" width="1100" height="700" />
+
+</div>
+<div class="container my-4">
+<form method="post"  action="\contact">
+{%csrf_token%}
+    <h2 class="h1-responsive font-weight-bold text-center my-4">For any queries contact us directly by filling details below</h2>
+    <div class="mb-3 ">
+        <label for="name" class="form-label font-weight-bold">Enter your name</label>
+        <input type="name" class="form-control-lg" id="name" name='name'>
+        
+      </div>
+    <div class="mb-3 ">
+      <label for="exampleInputEmail1" class="form-label font-weight-bold">Enter your Email address</label>
+      <input type="email" class="form-control-lg" id="email" aria-describedby="emailHelp" name='email'>
+      
+    </div>
+    
+    <div class="mb-3 ">
+        <label for="num" class="form-label font-weight-bold">Enter your contact number</label>
+        <input type="num" class="form-control-lg" id="num" name='num'>
+        
+    </div>
+    <div class="mb-3 ">
+        <label for="message" class="form-label font-weight-bold">Drop your message for us!</label>
+        <input type="message" class="form-control form-control-lg" id="message" name='message'>
+        
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+  </form>
+</div>
+{% endblock body %}

@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}Bus{% endblock title %}
+
+{% block body %}
+
+
+<main role="main" style="background-color: rgb(200, 200, 200)">
+
+    <section class="jumbotron text-center" style="background-color: rgb(200, 200, 200)">
+      <div class="container">
+        <h1 class="jumbotron-heading" style="font-size:50px">Bus</h1>
+       <p style="font-size:25px">Get wide range of buses for travelling in amazing prices!!</p>
+        <p>
+          <a href="/vehicles" class="btn btn-dark my-2 mx-5 px-5">Cars</a>
+          <a href="/bike" class="btn btn-dark my-2 mx-5 px-5">Bike</a>
+        </p>
+      </div>
+    </section>
+  
+    <div class="album py-5 bg-light" >
+      <div class="container" >
+  
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "ash.webp"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">Ashok Leyland</h4>
+                <p class="card-text">Best bus for travelling<br>Seating Capacity : 32<br>Additional Features: Music system</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "tata.jpg"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">Tata Starbus</h4>
+                <p class="card-text">Comfortable AC Bus <br>Seating Capacity : 40<br>Additional Features: music player</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                    
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "bb.webp"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">Bharat Benz</h4>
+                <p class="card-text">Affordable AC bus<br>Seating Capacity : 35<br>Additional Features: Luggage Space</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        
+        </div>
+      </div>
+    </div>
+  
+  </main>
+
+
+
+{% endblock body %}
+

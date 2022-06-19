@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block title %}Bike{% endblock title %}
+
+{% block body %}
+
+
+<main role="main" style="background-color: rgb(200, 200, 200)">
+
+    <section class="jumbotron text-center" style="background-color: rgb(200, 200, 200)">
+      <div class="container">
+        <h1 class="jumbotron-heading" style="font-size:50px">Bikes</h1>
+       <p style="font-size:25px">Get wide varieties of stylish bikes in affordable prices!!</p>
+        <p>
+          <a href="/vehicles" class="btn btn-dark my-2 mx-5 px-5">Cars</a>
+          <a href="/bus" class="btn btn-dark my-2 mx-5 px-5">Bus</a>
+        </p>
+      </div>
+    </section>
+  
+    <div class="album py-5 bg-light" >
+      <div class="container" >
+  
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "activa.webp"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">Honda Activa 6G</h4>
+                <p class="card-text">Comfortable and stylish bike<br>No. of cylinder : 1<br>Additional Features: Shutter Lock</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "ktm.webp"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">KTM RC 390</h4>
+                <p class="card-text">Comfortable and stylish Bike<br>No. of cylinders : 1<br>Additional Features: Adjustable Windsheild</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                    
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "hd.jpg"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">Harley Davidson</h4>
+                <p class="card-text">Stylish and Cool Bike<br>No. of cylinders : 2<br>Additional Features: Fuel Gauge</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "Pulsar.jpg"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">Bajaj Pulsar 150</h4>
+                <p class="card-text">Strong and Comfortable bike<br>No. of cylinders : 1<br>Additional Features: LED Tail Light</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "re.jpg"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">Royal Enfield</h4>
+                <p class="card-text">Stylish and Amazing Bike<br>No. of cylinders : 1<br>Additional Features: Navigation</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                 
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "splendor.webp"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">Hero Splendor Plus</h4>
+                <p class="card-text">Affordable and Comfortable Bike<br>No. of cylinders : 1<br>Additional Features: Mobile Connectivity</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "yamaha.png"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">Yamaha Fascino</h4>
+                <p class="card-text">Comfortable and affordable bike<br>No. of cylinders : 1<br>Additional Features:DRLs</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "hero.jpg"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">Hero HF Delux</h4>
+                <p class="card-text">Comfortable and stylish<br>No of cylinder : 1<br>Additional Features: fuel guage</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              {% comment %} <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> {% endcomment %}
+              {%load static%}
+              <img src = "{%static "tvs.jpg"%}"  alt="bike" class="d-block w-100" height="225" >
+              <div class="card-body">
+                <h4 style="text-align:center">TVS Apache</h4>
+                <p class="card-text">Affordable and stylish<br> No. of cylinder : 1<br>Additional Features: LED Tail Light</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-dark ">RENT</button>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </main>
+
+
+
+
+
+{% endblock body %}
+
